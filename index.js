@@ -29,6 +29,7 @@ app.get("/api", function (req, res) {
     });
   });
 
-app.listen(2000,function(){
+  const PORT = process.env.PORT;
+app.listen(PORT,function(){
     console.log("I am running")
 });
